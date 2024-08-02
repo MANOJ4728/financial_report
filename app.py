@@ -75,7 +75,7 @@ def upload_file():
         print(json_output)
 
         # Save the JSON to a file
-        output_file_path = 'manoj_news.json'
+        output_file_path = 'op.json'
         with open(output_file_path, 'w') as f:
             json.dump(json_structure, f, indent=2)
 
@@ -381,11 +381,11 @@ def upload_file():
             if not os.path.exists(output_folder):
                 os.makedirs(output_folder)
             
-            output_json_path = os.path.join(output_folder, 'manoj_json.json')
+            output_json_path = os.path.join(output_folder, 'output_json.json')
             write_json_to_file(extended_json, output_json_path)
             return extended_json
 
-        input_json_path = 'manoj_news.json'
+        input_json_path = 'op.json'
         template_json_path = 'template.json'
         output_folder_path = 'output'
         
