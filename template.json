@@ -1,0 +1,175 @@
+{
+    "executive summary": {
+        "overview": {
+            "corportation_name": "",
+            "from_date": "",
+            "to_date": ""
+        },
+        "key financial metrics": {
+            "total revenue": "",
+            "total expenses": "",
+            "net profit/loss": "",
+            "cash position": ""
+        }
+    },
+    "statistics": {
+        "Rooms available": {
+            "rooms available": "",
+            "previous_period": "",
+            "variance amount": "",
+            "variance percentage": "",
+            "budget": "",
+            "budget variance amount ": "",
+            "budget variance percentage": ""
+        },
+        "Rooms sold": {
+            "rooms sold": "",
+            "previous period": "",
+            "variance amount": "",
+            "variance percentage": "",
+            "budget": "",
+            "budget variance amount ": "",
+            "budget variance percentage": ""
+        },
+        "occupancy": {
+            "occupancy %": "",
+            "previous period": "",
+            "variance amount": "",
+            "variance percentage": "",
+            "budget": "",
+            "budget variance amount ": "",
+            "budget variance percentage": ""
+        },
+        "ADR": {
+            "adr": "",
+            "previous period": "",
+            "variance amount": "",
+            "variance percentage": "",
+            "budget": "",
+            "budget variance amount ": "",
+            "budget variance percentage": ""
+        },
+        "RevPAR": {
+            "revpar": "",
+            "previous period": "",
+            "variance amount": "",
+            "variance percentage": "",
+            "budget": "",
+            "budget variance amount ": "",
+            "budget variance percentage": ""
+        }
+    },
+    "income statement": {
+        "Revenue": {
+            "Total revenue": ""
+        },
+        "revenue_variance": {
+            "actual revenue": "",
+            "previous period revenue": "",
+            "variance amount": "",
+            "variance percentage": "",
+            "budgeted revenue": "",
+            "budget variance amount ": "",
+            "budget variance percentage": ""
+        },
+        "expense_variance": {
+            "actual expense": "",
+            "previous period expense": "",
+            "variance amount": "",
+            "variance percentage": "",
+            "budgeted expense": "",
+            "budget variance amount ": "",
+            "budget variance percentage": ""
+        },
+        "expense_departments": {
+            "room department": "",
+            "administrative & general": "",
+            "information & telecom system": "",
+            "sales & marketing": "",
+            "property operations & maintenance": "",
+            "utilities": "",
+            "insurance": "",
+            "other non-operating exp": "",
+            "interest expense": "",
+            "total expenses": ""
+        },
+        "Net Profit/Loss": {
+            "net profit/loss": ""
+        },
+        "net_profit/loss_variance": {
+            "actual net profit/loss": "",
+            "previous period net profit/loss": "",
+            "variance amount": "",
+            "variance percentage": "",
+            "budgeted net profit/loss": "",
+            "budget variance amount ": "",
+            "budget variance percentage": ""
+        }
+    },
+    "cash_flow_statement": {
+        "operating_activities": {
+            "cash inflows": "",
+            "cash outflows": "",
+            "net cash from operating activities": ""
+        },
+        "investing_activities": {
+            "cash inflows": "",
+            "cash outflows": "",
+            "net cash from investing activities": ""
+        },
+        "financing_activities": {
+            "cash inflows": "",
+            "cash outflows": "",
+            "net cash from financing activities": "",
+            "net increase/decrease in cash": ""
+        },
+        "cash_flow_variance": {
+            "actual cash flow": "",
+            "previous period cash flow": "",
+            "variance amount": "",
+            "variance percentage": ""
+        }
+    },
+    "balance_sheet": {
+        "Assets": {
+            "current assets": "",
+            "fixed assets": "",
+            "other current assets": "",
+            "total assets": ""
+        },
+        "Liabilities": {
+            "current liabilities": "",
+            "other current liabilities": "",
+            "long-term liabilities": "",
+            "total liabilities": ""
+        },
+        "Equity": {
+            "owners equity ": "",
+            "retained earnings": "",
+            "total equity": ""
+        }
+    },
+    "financial ratios & key insights": {
+        "liquidity ratios": {
+            "inventory" : "",
+            "prepaid_expenses" : "",
+            "current ratio": "",
+            "quick ratio": ""
+        },
+        "profitability ratios": {
+            "gross_operating_profit": "",
+            "gross profit margin": "",
+            "net profit margin": "",
+            "return on equity": ""
+        },
+        "solvency ratios": {
+            "ebit": "",
+            "debt to equity ratio": "",
+            "interest coverage ratio": ""
+        },
+        "Efficiency ratio": {
+            "previous_period_opening_total_assets": "",
+            "asset turnover ratio": ""
+        }
+    }
+}
