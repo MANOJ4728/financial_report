@@ -52,22 +52,24 @@ body {
   font-family: "Poppins", sans-serif;
   display: flex;
 }
-
-#from_date {
+#heading2{
   position: absolute;
   font-size: 35px;
   font-weight: strong;
   top: 240px;
-  left:140px;
-  color: #f0e68c;
+  left:40px;
   font-family: "Poppins", sans-serif;
   display: flex;
 }
-#to_date {
-
+#date {
+  position: absolute;
+  font-size: 35px;
+  font-weight: strong;
   top: 240px;
-  left: 450px;
-
+  text-align: center;
+  color: #f0e68c;
+  font-family: "Poppins", sans-serif;
+  display: flex;
 }
 #text_content {
   position: absolute;
