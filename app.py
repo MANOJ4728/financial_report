@@ -37,7 +37,6 @@ def upload_file():
         file.save(file_path)
         flash('File successfully uploaded')
 
-        # Define keys
         main_keys = ["executive summary", "statistics", "income statement", "cash_flow_statement", "balance_sheet", "financial ratios & key insights"]
         sub_keys = ["overview", "key financial metrics", "Rooms available", "Rooms sold", "Occupancy%", "ADR", "RevPAR", "revenue_variance", "expense_variance", "expense_departments", "net_profit/loss_variance", "operating_activities", "investing_activities", "financing_activities", "cash_flow_variance", "Assets", "Liabilities", "Equity", "liquidity ratios", "profitability ratios", "solvency ratios", "Efficiency ratios"]
 
@@ -381,21 +380,30 @@ def upload_file():
             if not os.path.exists(output_folder):
                 os.makedirs(output_folder)
             
-            output_json_path = os.path.join(output_folder, 'output_json.json')
+            output_json_path = os.path.join(output_folder, 'output.json')
             write_json_to_file(extended_json, output_json_path)
             return extended_json
 
         input_json_path = 'op.json'
         template_json_path = 'template.json'
         output_folder_path = 'output'
-        
+
         create_final_json(input_json_path, template_json_path, output_folder_path)
         
-        return redirect(url_for('index'))
+        return redirect(url_for('report'))
 
     else:
         flash('Allowed file types are xls, xlsx')
         return redirect(request.url)
+
+@app.route('/report')
+def report():
+    # Read JSON data
+    with open('output/output.json') as json_file:
+        data = json.load(json_file)
+    
+    return render_template('report.html', data=data)
+
 
 if __name__ == '__main__':
     if not os.path.exists(UPLOAD_FOLDER):
