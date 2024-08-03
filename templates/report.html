@@ -6,40 +6,34 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="static/script.js"></script>
+
 </head>
 <body>
     <div class="first_page">
         <div class="content">
-            <div id="from_date">{{ data['executive summary']['overview']['from_date'] }}</div>
-            <p style="position: absolute; top: 250px; left: 150px;">to</p>     
-            <div id="to_date">{{ data['executive summary']['overview']['to_date'] }}</div>
+            <div id="date">{{ data['executive summary']['overview']['from_date'] }} to {{ data['executive summary']['overview']['to_date'] }} </div>
             <div id="text_content">{{ data['executive summary']['overview']['corportation_name'] }}</div>
         </div>
     </div>
     <div class="second_page">
         <div class="content">
-            <div id="greetings"></div>
+            <div id="greetings">{{data_content["greetings"]|safe}}</div>
         </div>
     </div>
     <div class="third_page">
         <div class="content">
-            <div id="table_of_contents"></div>
+            <div id="table_of_contents">{{data_content["table_of_contents"]|safe}}</div>
         </div>
     </div>
     <div class="fourth_page">
         <div class="content">
             <div id="heading">SUMMARY</div>
+            <div id="heading2">1.Revenue Growth</div>
             <div id="graph">
                 <canvas id="donutChart"></canvas>
             </div>
-        </div>
-    </div>
-    <div class="fourth_page">
-        <div class="content">
-            <div id="heading">HIGHLIGHTS</div>
-            <div id="heading2">1.Revenue Growth</div>
-            <div id="graph">
-                <canvas id="myHorizontalBarChart" width="800" height="300"></canvas>
+            <!--<div id="gpt-content">{{data_content["summary"]|safe}} -->
             </div>
         </div>
     </div>
@@ -52,6 +46,13 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <div class="fourth_page">
+        <div class="content">
+            <div id="heading">HIGHLIGHTS</div>
+            <div id="graph">
+                <canvas id="myHorizontalBarChart" width="800" height="300"></canvas>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
