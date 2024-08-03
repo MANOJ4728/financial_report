@@ -398,11 +398,11 @@ def upload_file():
 
 @app.route('/report')
 def report():
-    # Read JSON data
     with open('output/output.json') as json_file:
         data = json.load(json_file)
-    
-    return render_template('report.html', data=data)
+    with open('static/data.json') as json_file:
+        data_content = json.load(json_file)
+    return render_template('report.html', data=data,data_content=data_content)
 
 
 if __name__ == '__main__':
